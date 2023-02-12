@@ -57,7 +57,7 @@ const Wine = require('./models/wine');
         {type: 'sparkling', grape: 'Blauer Portugieser', producer: 'Brand Bros', vintage: 2021, region: regions[10], wineImg: ['https://www.8greenbottles.de/wp-content/uploads/2021/10/pet-nat_rose_Produktansicht-638x1024.jpg'], price: 19},
     ]);
 
-    console.log(items);
+    console.log(wines);
 
     process.exit();
 
