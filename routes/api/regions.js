@@ -5,4 +5,9 @@ const regionsCtrl = require('../../controllers/api/regions');
 // GET /api/regions
 router.get('/regions', regionsCtrl.index);
 
+// GET /api/regions/id
+router.get('/regions/:id', regionsCtrl.show);
+
+router.get('/regions/:id/wines', regionsCtrl.getAllWines);
+
 module.exports = router;

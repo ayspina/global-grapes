@@ -1,19 +1,16 @@
 import { getToken } from './users-service'
 
 // This is the base path of the Express route we'll define
-const BASE_URL = '/api/regions';
+const BASE_URL = '/api/wines';
 
-export function getAll() {
-    return sendRequest(`${BASE_URL}/regions`);
-}
+// export function getAll() {
+//     return sendRequest(`${BASE_URL}/wines`);
+// }
 
 export function getById(id) {
-    return sendRequest(`${BASE_URL}/regions/${id}`);
+    return sendRequest(`${BASE_URL}/wines/${id}`);
 }
 
-export function getAllWines(id) {
-  return sendRequest(`${BASE_URL}/regions/${id}/wines`)
-}
 
 // Helper Functions 
 
@@ -33,5 +30,3 @@ async function sendRequest(url, method = 'GET', payload = null) {
     console.log(res);
     throw new Error('Bad Request');
 }
-
-
