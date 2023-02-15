@@ -1,0 +1,30 @@
+.WineDetailPage {
+    display: grid;
+    grid-template-areas: 
+    'info img buy';
+}
+
+.description {
+    grid-area: info;
+}
+
+.image {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    max-width:400px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width:400px;
+    max-height:450px;
+    width: auto;
+    height: auto;
+}
+
+
+.purchase {
+    grid-area: buy;
+}

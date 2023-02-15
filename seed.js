@@ -8,17 +8,17 @@ const Wine = require('./models/wine');
 
     await Region.deleteMany({});
     const regions = await Region.create([
-        {country: 'United States'},
-        {country: 'Argentina'},
-        {country: 'Chile'},
-        {country: 'South Africa'},
-        {country: 'France'},
-        {country: 'Italy'},
-        {country: 'Lebanon'},
-        {country: 'Morocco'},
-        {country: 'Australia'},
-        {country: 'New Zealand'},
-        {country: 'Germany'},
+        {country: 'United States', countryImg: ['https://images.unsplash.com/photo-1542384517060-2b41144f12a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1625&q=80']},
+        {country: 'Argentina', countryImg: ['https://images.unsplash.com/photo-1585867313424-06b0fd07d314?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80']},
+        {country: 'Chile', countryImg: ['https://images.unsplash.com/photo-1638367750225-08c090611929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80']},
+        {country: 'South Africa', countryImg: ['https://images.unsplash.com/photo-1611033960745-1411f5dd53c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80']},
+        {country: 'France', countryImg: ['https://images.unsplash.com/photo-1620679380601-f6cc0a9f8d6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80']},
+        {country: 'Italy', countryImg: ['https://images.unsplash.com/photo-1444214058525-761aeb793113?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80']},
+        {country: 'Lebanon', countryImg: ['https://imageio.forbes.com/specials-images/imageserve/5f312273be66228616e1dbac/IXSIR-Jezzine-vineyard--Lebanon/960x0.jpg?format=jpg&width=960']},
+        {country: 'Morocco', countryImg: ['https://www.wine-searcher.com/images/region/morocco-461-1-7.jpg?width=734']},
+        {country: 'Australia', countryImg: ['https://images.unsplash.com/photo-1597218287959-96e3450b92de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80']},
+        {country: 'New Zealand', countryImg: ['https://images.unsplash.com/photo-1618317458338-10aa54e1a3bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1752&q=80']},
+        {country: 'Germany', countryImg: ['https://images.unsplash.com/photo-1504279577054-acfeccf8fc52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80']},
     ]);
 
     await Wine.deleteMany({});

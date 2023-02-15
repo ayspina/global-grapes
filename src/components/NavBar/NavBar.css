@@ -1,0 +1,15 @@
+.NavBar > h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header p {
+    font-style: italic;
+}

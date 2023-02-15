@@ -1,0 +1,11 @@
+.RegionDetailPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.region-img {
+    background-size: contain;
+    max-width: 100%;
+    height: auto;
+
+}

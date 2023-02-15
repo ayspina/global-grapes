@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import './RegionDetailPage.css';
 import WineByRegionList from '../../components/WineByRegionList/WineByRegionList'
 import * as regionsAPI from '../../utilities/regions-api';
 import * as winesAPI from '../../utilities/wines-api'
@@ -31,9 +32,10 @@ export default function RegionDetailPage() {
 
 
     return (
-        <>
+        <div className="RegionDetailPage">
             <h1>{wineRegion.country}</h1>
+            <img src={wineRegion.countryImg} alt="" className="region-img"/>
             <WineByRegionList wines={wines.filter(wine => wine.region.country === wineRegion.country)} />
-        </>
+        </div>
     )
 };

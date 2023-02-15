@@ -8,8 +8,17 @@ export function getCart() {
 
 export function addItemToCart(id) {
     // Just send itemId for best security (no pricing)
-    return sendRequest(`${BASE_URL}/cart/wines/${id}`, 'POST');
-  }
+  return sendRequest(`${BASE_URL}/cart/wines/${id}`, 'POST');
+};
+
+export function setItemQtyInCart(id, newQty) {
+  return sendRequest(`${BASE_URL}/cart/qty`, 'PUT', { id, newQty });
+};
+
+export function checkout() {
+  // Changing data on the server, so make it a POST request
+  return sendRequest(`${BASE_URL}/cart/checkout`, 'POST');
+};
 
 // Helper Functions 
 

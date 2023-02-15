@@ -1,3 +1,4 @@
+import './WineByRegionList.css';
 import WineByRegionListItem from '../WineByRegionListItem/WineByRegionListItem';
 
 export default function WineByRegionList({ wines }) {
@@ -9,12 +10,11 @@ export default function WineByRegionList({ wines }) {
       );
 
     return (
-        <>
-        <h1>Wines from this region belong here</h1>
+        <div className='WineByRegionList'>
         <ul>
             {wineItems}
         </ul>
-        </>
+        </div>
 
     )
 

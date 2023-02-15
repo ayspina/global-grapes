@@ -1,0 +1,4 @@
+.WineByRegionListItem {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,13 +1,13 @@
+import './WineByRegionListItem.css';
 import { Link } from 'react-router-dom';
 
 export default function WineByRegionListItem({ wine }) {
     return (
-        <>
-        <Link to={`/wines/${wine._id}`} wine={wine}><h3>{wine.grape}</h3></Link>
-        <h5>{wine.producer}</h5>
-        <h5>{wine.vintage}</h5>
-        <img src={wine.wineImg[0]} alt="img" />
-        </>
+        <div className='WineByRegionListItem'>
+                <Link to={`/wines/${wine._id}`} wine={wine} style={{ textDecoration: 'none', color: 'black' }}><h3>{wine.type}</h3></Link>
+        
+        
+        </div>
         
     )
 };

@@ -5,7 +5,8 @@ const regionSchema = new Schema({
     country: {
         type: String,
         required: true
-    }
+    },
+    countryImg: []
 }, {
     timestamps: true
 });
