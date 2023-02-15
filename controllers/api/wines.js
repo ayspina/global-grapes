@@ -3,8 +3,7 @@ const Wine = require('../../models/wine');
 
 module.exports = {
     index,
-    show,
-    getByRegion
+    show
 };
 
 async function index(req, res) {
@@ -15,5 +14,6 @@ async function index(req, res) {
 async function show(req, res) {
     const wine = await Wine.findById(req.params.id);
     res.json(wine);
+  
 };
 

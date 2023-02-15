@@ -1,16 +1,15 @@
 import { getToken } from './users-service'
 
-// This is the base path of the Express route we'll define
-const BASE_URL = '/api/wines';
+const BASE_URL = '/api/orders';
 
-export function getAll() {
-    return sendRequest(`${BASE_URL}/wines`);
-}
+export function getCart() {
+  return sendRequest(`${BASE_URL}/cart`);
+};
 
-export function getById(id) {
-    return sendRequest(`${BASE_URL}/wines/${id}`);
-}
-
+export function addItemToCart(id) {
+    // Just send itemId for best security (no pricing)
+    return sendRequest(`${BASE_URL}/cart/wines/${id}`, 'POST');
+  }
 
 // Helper Functions 
 
