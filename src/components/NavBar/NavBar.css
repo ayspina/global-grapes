@@ -1,8 +1,4 @@
-.NavBar > h1 {
-    font-family: 'Playfair Display', serif;
-}
-
-.header {
+.NavBar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,7 +7,9 @@
 }
 
 .logo {
+    display: flex;
     width: 328px;
+    justify-content: center;
 }
 
 .logo-img {
@@ -33,4 +31,11 @@ hr {
     height: .5px;
     background-color: rgba(185, 225, 37, 1);
     border: none;
+}
+
+.nav3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 80px;
 }

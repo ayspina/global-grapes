@@ -10,26 +10,28 @@ export default function NavBar({user, setUser}) {
     };
 
     return (
-    <nav className='NavBar'>
-        <div className='header'>
-            <div className='logo'>
-                <img src="https://i.imgur.com/a6LPjie.png" alt="" className='logo-img' />
-            </div>
-            <p>Hello, {user.name}.</p>
+    <>
+     <nav className='NavBar'>
+        <div className='nav1'>
+            <Link to='/orders'>Order History</Link>
+            &nbsp; | &nbsp;
+            <Link to='/orders/cart'>My Cart</Link>
+            &nbsp; | &nbsp;
+            <Link to='/regions'>Countries</Link>
+        </div>       
+        <div className='logo'>
+             <img src="https://i.imgur.com/a6LPjie.png" alt="" className='logo-img' />
         </div>
- 
-        <hr />
-
-        <Link to='/orders'>Order History</Link>
-        &nbsp; | &nbsp;
-        <Link to='/orders/cart'>My Cart</Link>
-        &nbsp; | &nbsp;
-        <Link to='/regions' role='button' aria-haspopup='menu'>Wine Regions</Link>
-        &nbsp; | &nbsp;
-        <Link to='' onClick={handleLogOut}>Log Out</Link>
-        
+        <div className='nav3'>
+            <p>Hello, {user.name}.</p>
+            &nbsp; | &nbsp;
+            <Link to='' onClick={handleLogOut}>Log Out</Link>
+        </div>
         
     </nav>
+    <hr />
+    </>
+   
 )}
 
 
