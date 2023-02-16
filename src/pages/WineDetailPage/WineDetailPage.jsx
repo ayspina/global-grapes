@@ -32,7 +32,7 @@ export default function WineDetailPage({ wine, cart, setCart }) {
                 <p>{wineItem.grape}</p>
             </div>
             <div className="image">
-                <img src={wineItem.wineImg} alt="" />
+                <img src={wineItem.wineImg} alt="" className="wine-img" />
             </div>
             <div className="purchase">
                 <p>{wineItem.producer}</p>

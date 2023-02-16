@@ -1,0 +1,21 @@
+.AllRegionsPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-collage {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.home-collage-img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin-bottom: 0;
+}

@@ -12,7 +12,9 @@ export default function NavBar({user, setUser}) {
     return (
     <nav className='NavBar'>
         <div className='header'>
-            <h1>Global Grapes</h1>
+            <div className='logo'>
+                <img src="https://i.imgur.com/a6LPjie.png" alt="" className='logo-img' />
+            </div>
             <p>Hello, {user.name}.</p>
         </div>
  
@@ -22,7 +24,7 @@ export default function NavBar({user, setUser}) {
         &nbsp; | &nbsp;
         <Link to='/orders/cart'>My Cart</Link>
         &nbsp; | &nbsp;
-        <Link to='/regions' aria-haspopup='menu'>Wine Regions</Link>
+        <Link to='/regions' role='button' aria-haspopup='menu'>Wine Regions</Link>
         &nbsp; | &nbsp;
         <Link to='' onClick={handleLogOut}>Log Out</Link>
         

@@ -1,11 +1,26 @@
 .RegionDetailPage {
     display: flex;
     flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.region-hdr {
+    text-align: left;
 }
 
 .region-img {
     background-size: contain;
     max-width: 100%;
     height: auto;
+    
 
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+h3 {
+    font-style: italic;
 }

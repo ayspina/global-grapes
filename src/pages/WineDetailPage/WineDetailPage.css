@@ -1,5 +1,6 @@
 .WineDetailPage {
     display: grid;
+    margin-top: 60px;
     grid-template-areas: 
     'info img buy';
 }
@@ -16,7 +17,7 @@
     margin: 0 auto;
 }
 
-img {
+.wine-img {
     display: block;
     max-width:400px;
     max-height:450px;

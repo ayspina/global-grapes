@@ -10,6 +10,27 @@
     width: 100%;
 }
 
+.logo {
+    width: 328px;
+}
+
+.logo-img {
+    background-size: contain;
+    max-width: 100%;
+    height: auto;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
 .header p {
     font-style: italic;
+}
+
+hr {
+    height: .5px;
+    background-color: rgba(185, 225, 37, 1);
+    border: none;
 }
