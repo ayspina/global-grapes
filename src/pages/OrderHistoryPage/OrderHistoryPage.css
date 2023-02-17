@@ -1,0 +1,9 @@
+.cheers {
+    height: 450px;
+}
+
+.cheers-img {
+    background-size: contain;
+    max-height: 100%;
+    width: auto;
+}
