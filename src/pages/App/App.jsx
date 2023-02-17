@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import './App.css';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { getUser } from '../../utilities/users-service'
 import AuthPage from "../AuthPage/AuthPage";
 import NewOrderPage from "../NewOrderPage/NewOrderPage";
@@ -34,6 +34,7 @@ export default function App() {
             <Route path='/regions/' element={<AllRegionsPage />} />
             <Route path={`/regions/:id`} element={<RegionDetailPage />} />
             <Route path={`/wines/:id`} element={<WineDetailPage cart={cart} setCart={setCart} />} />
+            <Route path="/*" element={<Navigate to="/regions" />} />
 
           </Routes>
         </>

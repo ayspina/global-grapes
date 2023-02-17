@@ -8,4 +8,10 @@ ul {
     margin-right: 40px;
     margin-left: 40px;
     text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+
+ul a {
+    color: black;
 }

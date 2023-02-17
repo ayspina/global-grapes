@@ -17,8 +17,8 @@ export default function WineDetailPage({ wine, cart, setCart }) {
     }, []);
 
     async function handleAddToOrder(id) {
-        alert(`add item: ${id}`);
         const cart = await ordersAPI.addItemToCart(id);
+        console.log(cart);
         setCart(cart);
       };
 

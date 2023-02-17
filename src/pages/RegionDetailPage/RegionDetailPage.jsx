@@ -34,9 +34,14 @@ export default function RegionDetailPage() {
     return (
         <div className="RegionDetailPage">
             <h1 className="region-hdr">{wineRegion.country}</h1>
-            <img src={wineRegion.countryImg} alt="" className="region-img"/>
-            <h3>Shop the wines of this region:</h3>
-            <WineByRegionList wines={wines.filter(wine => wine.region.country === wineRegion.country)} />
+            <div className="region-container">
+                <img src={wineRegion.countryImg} alt="" className="region-img"/>
+                <div className="top-right">
+                    <WineByRegionList wines={wines.filter(wine => wine.region.country === wineRegion.country)} />
+                </div>
+                
+            </div>
+           
         </div>
     )
 };

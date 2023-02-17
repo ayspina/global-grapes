@@ -4,7 +4,7 @@ import { getToken } from './users-service'
 const BASE_URL = '/api/regions';
 
 export function getAll() {
-    return sendRequest(`${BASE_URL}/regions`);
+    return sendRequest(BASE_URL);
 }
 
 export function getById(id) {

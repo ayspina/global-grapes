@@ -1,6 +1,8 @@
 .WineByRegionList > ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: underline;
+    align-items: canter;
+    color: rgba(185, 225, 37, 1);
 }

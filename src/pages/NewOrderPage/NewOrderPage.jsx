@@ -1,6 +1,6 @@
 import './NewOrderPage.css';
 import { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import * as ordersAPI from '../../utilities/orders-api';
 import LineItems from '../../components/LineItems/LineItems';
 
@@ -55,12 +55,16 @@ export default function NewOrderPage() {
                   disabled={!lineItems.length}
                 >CHECKOUT</button>
               }
-              <span>{cart.totalQty}</span>
+              <span>Total Qty: {cart.totalQty}</span>
               <span className="right">${cart.orderTotal.toFixed(2)}</span>
             </section>
           </>
           :
-          <div className="thirsy">Thirsty?</div>
+          <>
+          <div className="empty-cart">Your cart is currently empty.</div>
+          <Link to='/regions'>Click here to shop.</Link>
+          </>
+          
         }
       </div>
         

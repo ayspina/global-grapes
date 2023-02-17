@@ -1,1 +1,32 @@
+.LineItem {
+    display: grid;
+    grid-template-areas: 
+    'item item item qty price';
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-bottom: .5px solid rgba(185, 225, 37, 1);;
+}
+
+.item{
+    grid-area: item;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.qty {
+    grid-area: qty;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ext-price {
+    grid-area: price;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 

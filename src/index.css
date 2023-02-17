@@ -24,8 +24,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Oranienbaum', serif;
 }
 
 #root {
@@ -117,14 +116,15 @@ input:focus {
 button, a.button {
   margin: 1vmin;
   padding: 1vmin;
-  color: var(--white);
-  background-color: var(--tan-3);
+  color: black;
+  background-color: white;
+  font-family: 'Oranienbaum', serif;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2);
-  border-radius: .5vmin;
+  border: 1px solid rgba(185, 225, 37, 1);
+  /* border-radius: .5vmin; */
   outline: none;
   cursor: pointer;
 }

@@ -5,7 +5,6 @@ export default function LineItems({ lineItem, isPaid, handleChangeQty }) {
       <div className="LineItem">
         <div className="item">
           <span>{lineItem.wine.grape}</span>
-          <br />
           <span>${lineItem.wine.price}</span>
         </div>
       <div className="qty">
@@ -24,6 +23,7 @@ export default function LineItems({ lineItem, isPaid, handleChangeQty }) {
         }
       </div>
       <div className="ext-price">${lineItem.extPrice.toFixed(2)}</div>
+      <hr />
       </div>  
       
     )

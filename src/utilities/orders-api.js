@@ -3,21 +3,21 @@ import { getToken } from './users-service'
 const BASE_URL = '/api/orders';
 
 export function getCart() {
-  return sendRequest(`${BASE_URL}/cart`);
+  return sendRequest(`${BASE_URL}/orders/cart`);
 };
 
 export function addItemToCart(id) {
     // Just send itemId for best security (no pricing)
-  return sendRequest(`${BASE_URL}/cart/wines/${id}`, 'POST');
+  return sendRequest(`${BASE_URL}/orders/cart/wines/${id}`, 'POST');
 };
 
 export function setItemQtyInCart(id, newQty) {
-  return sendRequest(`${BASE_URL}/cart/qty`, 'PUT', { id, newQty });
+  return sendRequest(`${BASE_URL}/orders/cart/qty`, 'PUT', { id, newQty });
 };
 
 export function checkout() {
   // Changing data on the server, so make it a POST request
-  return sendRequest(`${BASE_URL}/cart/checkout`, 'POST');
+  return sendRequest(`${BASE_URL}/orders/cart/checkout`, 'POST');
 };
 
 // Helper Functions 
@@ -35,6 +35,5 @@ async function sendRequest(url, method = 'GET', payload = null) {
     }
     const res = await fetch(url, options);
     if (res.ok) return res.json();
-    console.log(res);
     throw new Error('Bad Request');
 }

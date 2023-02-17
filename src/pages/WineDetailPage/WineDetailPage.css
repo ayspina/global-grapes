@@ -1,12 +1,17 @@
 .WineDetailPage {
     display: grid;
-    margin-top: 60px;
+    margin: 60px;
     grid-template-areas: 
     'info img buy';
 }
 
 .description {
     grid-area: info;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: .5px solid rgba(185, 225, 37, 1);
 }
 
 .image {
@@ -28,4 +33,9 @@
 
 .purchase {
     grid-area: buy;
+    display: flex;
+    justify-content: center;
+    border: .5px solid rgba(185, 225, 37, 1);
+    flex-direction: column;
+    align-items: center;
 }
