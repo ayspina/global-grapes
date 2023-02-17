@@ -14,6 +14,7 @@ A single-page application designed to highlight natural wines worldwide.
 
 # Getting Started 
 https://global-grapes.herokuapp.com/regions
+
 https://trello.com/b/HwTAXlLh/project-4
 
 # Next Steps
