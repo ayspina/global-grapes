@@ -1,6 +1,7 @@
 # Global Grapes
 
 A single-page application designed to highlight natural wines worldwide. 
+![Screen Shot 2023-02-17 at 10 07 03 AM](https://user-images.githubusercontent.com/60244001/219690149-ab98b38f-03c9-4c02-81c4-71f77ab0cf31.png)
 
 # Technologies Used
 
